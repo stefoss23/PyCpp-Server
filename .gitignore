@@ -1,2 +1,3 @@
+/build
 *.pyc
 db.sqlite3
