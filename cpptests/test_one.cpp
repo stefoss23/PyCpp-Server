@@ -4,6 +4,8 @@
 
 int main() {
 
-   assert(false);
+   int * x = new int;
+
+
    return 0;
 }
