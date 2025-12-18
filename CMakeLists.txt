@@ -6,7 +6,8 @@ set(CMAKE_C_FLAGS   "${CMAKE_C_FLAGS} -Wno-unused-parameter")
 
 option( MEM_CHECK               "Use valgrind to check for memory errors"        ON)
 
-#include_directories(include)
+include_directories(include)
+
 #set(INCLUDE_DIR ${CMAKE_SOURCE_DIR}/include)
 
 #set(TEST_DIR ${CMAKE_SOURCE_DIR}/test-data)
