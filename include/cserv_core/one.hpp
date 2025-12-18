@@ -2,6 +2,9 @@
 #define CSERV_CORE_ONE_HPP
 
 namespace cserv_core {
+
+   int onefunc();
+
 }
 
 #endif

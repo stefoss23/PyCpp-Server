@@ -12,13 +12,13 @@ include_directories(include)
 
 #set(TEST_DIR ${CMAKE_SOURCE_DIR}/test-data)
 
-#add_library(rads SHARED  src/utils/utils.cpp
+add_library(cserv_core SHARED  src/one.cpp
 
-#           )
+           )
            
 #target_link_libraries(rads pthread)
-#install(TARGETS rads DESTINATION "lib")
-#install(DIRECTORY include/ DESTINATION include)
+install(TARGETS cserv_core DESTINATION "lib")
+install(DIRECTORY include/ DESTINATION include)
 
 #Start test setup
 enable_testing()

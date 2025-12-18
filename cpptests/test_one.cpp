@@ -6,7 +6,7 @@ using namespace cserv_core;
 
 int main() {
 
-   //int * x = new int(9);
+   assert(onefunc() == 88);
 
 
    return 0;
