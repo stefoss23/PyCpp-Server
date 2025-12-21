@@ -17,8 +17,10 @@ void _printErrorData(string function, int line) {
 void _assertVectorEqual(vector<int> expected, vector<int> value, string function, int line) {
 
    if (expected.size() != value.size()) {
-      cout << "--- Size of lists are not equal:" << endl;
       _printErrorData(function, line);
+      cout << "--- Size of lists are not equal:" << endl;
+      cout << "------ Expected: " << expected.size() << endl;
+      cout << "------ Actual  : " << value.size() << endl;
       abort();
    }      
       
@@ -40,18 +42,18 @@ void _assertVectorEqual(vector<int> expected, vector<int> value, string function
          abort();                           
       }
 }
-/*
+
 #ifndef assertVectorEqual
 #define assertVectorEqual(expected, value) \
 { \
    _assertVectorEqual(expected, value, __PRETTY_FUNCTION__, __LINE__); \
 }
-#endif*/
+#endif
 
 
 void test_prime() {
    
-   _assertVectorEqual({4, 7}, CreatePrimes(1), "ee", 88);
+   assertVectorEqual(vector<int>({4, 3, 6}), CreatePrimes(1));
    /*_assertEqual({2}, CreatePrimes(2));
    _assertEqual({2, 3, 5, 7, 11, 13, 17, 19, 23}, CreatePrimes(25));*/
 }
