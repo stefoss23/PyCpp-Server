@@ -1,4 +1,5 @@
 foreach (test   test_one
+                test_prime
     )
     add_executable(${test} ${test}.cpp)
     target_link_libraries(${test} cserv_core)
