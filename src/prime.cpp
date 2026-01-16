@@ -9,8 +9,7 @@ namespace cserv_core {
    
    vector<int> CreatePrimes(int max) {
    
-      vector<int> list;
-   
+      vector<int> list;   
       int limit = sqrt(max);
    
       for (int i = 2; i <= max; i++) {
@@ -32,10 +31,7 @@ namespace cserv_core {
          list.push_back(i);
       }    
 
-      return list;      
-   
-   
-      //return {4, 8};
+      return list;
    }
    
 }
