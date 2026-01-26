@@ -7,4 +7,7 @@ def number(request):
     return HttpResponse(func())
     
 def primes(request):
-    return HttpResponse(json.dumps(get_primes()))
+    
+    num = int(request.GET.get('num'))
+
+    return HttpResponse(json.dumps(get_primes(num)))

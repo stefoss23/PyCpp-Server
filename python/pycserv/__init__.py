@@ -1,5 +1,11 @@
 def func():
    return "pycserv function called"
    
-def get_primes():
-   return [1, 2, 3]   
+def get_primes(num):
+
+   lst = []
+   
+   for n in range(num):
+      lst.append(n)
+
+   return lst 
