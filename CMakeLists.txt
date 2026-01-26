@@ -16,7 +16,6 @@ add_library(cserv_core SHARED  src/one.cpp
                                src/prime.cpp
            )
            
-#target_link_libraries(rads pthread)
 install(TARGETS cserv_core DESTINATION "lib")
 install(DIRECTORY include/ DESTINATION include)
 
@@ -24,3 +23,5 @@ install(DIRECTORY include/ DESTINATION include)
 enable_testing()
 add_subdirectory(cpptests)
 #End test setup
+
+add_subdirectory(python)
