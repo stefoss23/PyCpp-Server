@@ -1,10 +1,10 @@
 
 
 
-pybind11_add_module(pcl_python cserv_pybind.cpp)
-set_target_properties(pcl_python
+pybind11_add_module(cserv_python cserv_pybind.cpp)
+set_target_properties(cserv_python
         PROPERTIES PREFIX ""
                SUFFIX ".so"
         )
-target_link_libraries(pcl_python PRIVATE cserv_core )
+target_link_libraries(cserv_python PRIVATE cserv_core )
 
