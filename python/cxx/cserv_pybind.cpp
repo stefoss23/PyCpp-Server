@@ -14,9 +14,13 @@ using namespace std;
 using namespace std::complex_literals;*/
 
 
+int func() {
+   return 5;
+}
+
 
 PYBIND11_MODULE(cserv_python, m) {
 
-  //m.def("complex_equal", &complex_equal);
+  m.def("func", &func);
 
 }
