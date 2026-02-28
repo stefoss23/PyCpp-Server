@@ -12,6 +12,8 @@ include_directories(include)
 
 #set(TEST_DIR ${CMAKE_SOURCE_DIR}/test-data)
 
+set(SERVER_DIR ${CMAKE_SOURCE_DIR}/server)
+
 add_library(cserv_core SHARED  src/one.cpp
                                src/prime.cpp
            )
@@ -25,3 +27,4 @@ add_subdirectory(cpptests)
 #End test setup
 
 add_subdirectory(python)
+add_subdirectory(server)
