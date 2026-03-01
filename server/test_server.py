@@ -25,7 +25,10 @@ class ServerTester(unittest.TestCase):
         time.sleep(5)
 
     def test1(self):
-        pass
+        url = 'http://127.0.0.1:8000/primes/?num=20'
+        response = requests.get(url)
+        assert(len(response.json()) == 8)
+        
 
 
 if __name__ == '__main__':
