@@ -1,12 +1,12 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 import json
-from pycserv import *
+from .cserv_python import *
 
 def number(request):
-    return HttpResponse(func())
+    return HttpResponse("Simple request called.")
     
-def primes(request):        
+def primes(request):
     try:
        num = int(request.GET.get('num'))
        return HttpResponse(json.dumps(get_primes(num)))
