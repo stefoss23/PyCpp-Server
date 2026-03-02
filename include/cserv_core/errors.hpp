@@ -5,6 +5,7 @@ namespace cserv_core {
 
    void segfault();
    void except();
+   void mem_loss();
 
 }
 

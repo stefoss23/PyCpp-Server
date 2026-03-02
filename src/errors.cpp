@@ -15,4 +15,9 @@ namespace cserv_core {
       throw logic_error("Exception from cpp");
    }
    
+   void mem_loss() {
+      char * a = new char[200000000];
+      throw logic_error("Mem-loss exception");
+   }
+   
 }

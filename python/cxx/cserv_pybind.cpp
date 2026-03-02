@@ -15,5 +15,6 @@ PYBIND11_MODULE(cserv_python, m) {
   m.def("primes", &CreatePrimes);
   m.def("segfault", &segfault);
   m.def("ex", &except);
+  m.def("mem_loss", &mem_loss);
   
 }
