@@ -16,6 +16,7 @@ set(SERVER_DIR ${CMAKE_SOURCE_DIR}/server)
 
 add_library(cserv_core SHARED  src/one.cpp
                                src/prime.cpp
+                               src/errors.cpp
            )
            
 install(TARGETS cserv_core DESTINATION "lib")
