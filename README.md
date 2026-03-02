@@ -8,7 +8,7 @@ Basically this is a Python django-server, but the underlying core is c++.
 Benefits:
 - Using c++ allows for fast and efficient data processing.
 - Using Python for the actual API calls allows for better server support by several frameworks.
-- The code is developed on solely on a Linux framework.
+- The code is developed on solely on a Linux framework, and completely void of any IDE-dependency.
 
 Pybind11 is using a binding between the c++ library files and the Python server.
 
@@ -18,6 +18,7 @@ Example of use:
 
 ```bash
 mkdir build
+cd build
 cmake ..
 make
 ctest
