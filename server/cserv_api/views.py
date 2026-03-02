@@ -22,3 +22,8 @@ def ex1(request):
     print("--- Exceptiom request 1")
     raise Exception("Python exception called")
     return HttpResponse(None)
+    
+def ex2(request):
+    print("--- Exceptiom request 2")
+    raise Exception("CPP exception called")
+    return HttpResponse(None)
