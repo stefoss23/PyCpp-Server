@@ -15,4 +15,5 @@ def primes(request):
        
 def sfault(request):
     print("--- Segfault request")
+    segfault();
     return HttpResponse(None)
