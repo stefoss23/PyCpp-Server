@@ -25,5 +25,5 @@ def ex1(request):
     
 def ex2(request):
     print("--- Exceptiom request 2")
-    raise Exception("CPP exception called")
+    raise ex()
     return HttpResponse(None)
