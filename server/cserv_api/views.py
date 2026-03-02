@@ -29,6 +29,6 @@ def ex2(request):
     return HttpResponse(None)
     
 def memloss(request):
-    print("--- Exceptiom request 2")
-    raise ex()
+    print("--- Mem-loss request")
+    mem_loss();
     return HttpResponse(None)    
