@@ -12,8 +12,7 @@ set(SERVER_DIR ${CMAKE_SOURCE_DIR}/server)
 set(API_DIR ${CMAKE_SOURCE_DIR}/server/cserv_api)
 set(PYTHON_BINARY_DIR ${CMAKE_BINARY_DIR}/python/cxx)
 
-add_library(cserv_core SHARED  src/one.cpp
-                               src/prime.cpp
+add_library(cserv_core SHARED  src/prime.cpp
                                src/errors.cpp
            )
            
