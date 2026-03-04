@@ -1,41 +1,13 @@
-http://127.0.0.1:8000/primes/?num=2
-
-timeout 3s python3 manage.py runserver
 
 
-exmaple of python url calls:
-
-In [1]: import requests
-
-In [2]: url = 'http://127.0.0.1:8000/primes/?num=20'
-
-In [3]: url
-Out[3]: 'http://127.0.0.1:8000/primes/?num=20'
-
-In [4]: response = requests.get(url)
-
-In [5]: reponse.status_code
----------------------------------------------------------------------------
-NameError                                 Traceback (most recent call last)
-Cell In[5], line 1
-----> 1 reponse.status_code
-
-NameError: name 'reponse' is not defined
-
-In [6]: response.status_code
-Out[6]: 200
-
-In [7]: response.json()
-Out[7]: [2, 3, 5, 7, 11, 13, 17, 19]
-
-In [8]: 
+http://127.0.0.1:8000/primes/?num=20
+Returns prirmes 2 to 20.
 
 
+http://127.0.0.1:8000/sfault
+Introduces a segmentation fault
 
 
-----------------
-
-
-subprocess.run(['timeout', '3s', 'python3', 'manage.py', 'runserver'])
-
+http://127.0.0.1:8000/memloss
+Tries to introduce memory loss after exception call
 
