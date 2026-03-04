@@ -11,7 +11,7 @@ Pybind11 is using a binding between the c++ library files and the Python server.
 
 The code is meant to be fully test-driven, and can be fully run by cmake.
 
-Example of use:
+Example of use (Linux only):
 
 ```bash
 git submodule init
