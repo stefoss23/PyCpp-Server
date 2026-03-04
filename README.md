@@ -22,7 +22,7 @@ cmake ..
 make
 ctest
 
-Test project /home/stf/tutorial/cserv/build
+Test project /home/PCL-server/build
     Start 1: test_prime
 1/2 Test #1: test_prime .......................   Passed    0.00 sec
     Start 2: python_test_server
