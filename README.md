@@ -25,8 +25,8 @@ ctest
 Test project /home/PCL-server/build
     Start 1: test_prime
 1/2 Test #1: test_prime .......................   Passed    0.00 sec
-    Start 2: python_test_server
-2/2 Test #2: python_test_server ...............   Passed    5.22 sec
+    Start 2: python_test_server_call
+2/2 Test #2: python_test_server_call ..........   Passed    5.26 sec
 
 cd ../server
 python3 manage.py runserver
