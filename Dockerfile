@@ -10,6 +10,9 @@ RUN apt-get update && apt-get install -y \
 RUN apt-get install -y python3-dev
 RUN apt-get -y install python3-django
 
+RUN git submodule init
+RUN git submodule update
+
 RUN cmake --version
 
 RUN mkdir build
