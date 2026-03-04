@@ -11,7 +11,7 @@ class ServerTester(unittest.TestCase):
     @classmethod
     def startServer(self):
         print("-------", os.getcwd())
-        subprocess.run(['timeout', '20s', 'python3', '../../server/manage.py', 'runserver'])
+        subprocess.run(['timeout', '5s', 'python3', '../../server/manage.py', 'runserver'])
 
     @classmethod
     def setUpClass(cls):
