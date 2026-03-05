@@ -9,10 +9,11 @@ namespace cserv_core {
    
    vector<int> CreatePrimes(int max) {
    
-      vector<int> list;   
-      int limit = sqrt(max);
+      vector<int> list;
    
       for (int i = 2; i <= max; i++) {
+      
+         int limit = sqrt(i);
    
          bool is_prime = true;
    
