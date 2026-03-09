@@ -1,5 +1,5 @@
-# PCL-Server
-Python-C++-Linux-server
+# PyCpp-Server
+Python-C++-server
 
 This is a test-project to explore creating a primarily C++-type server using a light Python-layer for the API process.
 The reason for choosing C++ is its potential for faster and efficient data processing.
